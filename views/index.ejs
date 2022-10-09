@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/stylesheet/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="header">my to-do-list</h1>
+    </header>
+
+    <div class="main">
+      <div class="left-section">
+        <form action="" method="post">
+          <label for="task">input new task here </label>
+
+          <input
+            type="text"
+            name="title"
+            id="task"
+            placeholder="type new task here "
+          /><input
+            type="text"
+            name="task"
+            id="task"
+            placeholder="type new task here "
+          />
+
+          <div class="submit-conrol">
+            <input type="submit" name="" id="" />
+            <button>clear</button>
+          </div>
+        </form>
+      </div>
+      <div class="right-section">
+        <ul>
+          <% tasks.forEach(element => { %>
+
+          <div class="car task-card">
+            <div class="task-title"><%= element.title %></div>
+            <action>
+              <a href="/"> edit </a>
+            </action>
+          </div>
+
+          <% }) %>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
